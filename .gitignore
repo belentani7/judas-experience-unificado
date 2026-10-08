@@ -3,6 +3,12 @@
 node_modules/
 .env
 .env.*
+.openclaw/
+
+# --- guardias-sinc-2026-10-08 (auto) ---
+node_modules/
+.env
+.env.*
 !.env.example
 *.pem
 *.key

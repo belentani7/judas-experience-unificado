@@ -54,11 +54,11 @@ El mapa completo, con todos los nodos y su papel, vive en el nodo central:
 | Nodo | Papel |
 |---|---|
 | [Belentani Omega](https://belentani.es) | Sitio oficial (nodo central) |
-| [The Judas Experience](https://belentani7.github.io/belentani-judas-experience/) | La obra central |
+| [The Judas Experience](https://github.com/belentani7/belentani-judas-experience) | La obra central |
 | [Omega Immersive Portal](https://belentani-omega-immersive-portal.vercel.app) | Portal inmersivo 3D |
-| [Galeria de Versiones](https://belentani7.github.io/belentani-omega-showcase/) | Todas las versiones |
-| [ARCHIVO VIVO](https://belentani7.github.io/belentani-artista-unified/) | Archivo de la obra |
-| [Belentani — Judas Era](https://belentani7.github.io/belentani-es-neon/) | Portfolio visual |
+| [Galeria de Versiones](https://github.com/belentani7/belentani-omega-showcase) | Todas las versiones |
+| [ARCHIVO VIVO](https://github.com/belentani7/belentani-artista-unified) | Archivo de la obra |
+| [Belentani — Judas Era](https://github.com/belentani7/belentani-es-neon) | Portfolio visual |
 | [NOIACORE LAB](https://belentani.vercel.app) | Laboratorio |
 
 ## Licencia

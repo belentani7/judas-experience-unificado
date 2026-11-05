@@ -1,66 +1,73 @@
-# Judas Experience — Unificado
+# THE JUDAS EXPERIENCE // UNIFICADO
 
-La obra Judas reunida en un solo lugar.
+Artefacto rojo que **unifica** las piezas dispersas del universo Belentani / Judas en una sola
+experiencia web inmersiva. Donde el código divergía, **prevalece el más sofisticado**; donde el
+lore divergía, **se compila en uno solo**.
 
-## Qué es
+## Qué se ha unificado
 
-La **Judas Experience** es la pieza central del universo artístico Belentani. Este repositorio
-unifica las piezas que estaban dispersas en una sola experiencia navegable.
+| Fuente | Aporte | Estado |
+|---|---|---|
+| `OMEGA_LIVING_UNIVERSE_MAX_1.html` | **Motor Three.js** (elegido como base por ser el más sofisticado): planeta vivo procedural, **llave dorada PBR** y **diamante físico** (IOR 2.417), máquina orgánica, bloom, postproducción cinematográfica, audio procedural, telemetría. | **Prevalece** |
+| `06_planeta_rojo.html` | Reliquias `KEY` / `DIAMOND` / `PLANET` en Three.js. | Integrado (motivos) |
+| `belentani-lore-web/*` | Los **6 nodos** (Portal → Belentani → Artista → Neon Glass → Judas → Omega) y la cronología del lore. | Integrado |
+| `Belentani/frontend` (React `Judas.tsx`) | El "The Judas Experience" original: capítulos **Betrayal / Trial / Revelation / Redemption**. | Integrado (mapeado a las gemas) |
+| `belentani-judas-experience-os-unificado.html` | Paleta neón rojo `#ff073a`, anillo/HUD, "Crónica de la Llave Dorada". | Integrado |
+| Antigua web **buildai.space** (`judas-experience-13898`) | Concepto "Era Judas": Inicio, Música, Era Judas, Herramientas AI, Sobre, Contacto/Fan Zone. | Archivado como nodo |
+| `BELENTANI-JUDAS-BUILDAI-ANALYSIS.md` | Protocolo de los **5 Elementos**, nodo `JUDAS-CORE-07`, 432 Hz, Oráculo/Agente, 4 estados. | Integrado |
 
-En línea: <https://judas-experience.vercel.app>
+
+## Sesiones del artista
+
+La experiencia canónica expone nueve sesiones desde el botón SESSIONS de la barra superior: **Home**, **The Artist**, **Music**, **Judas**, **The Experience**, **AI Lab**, **Art Gallery**, **Contact** y **Music Studio**. El hub vive en core/session-hub.js y mantiene la escena Three.js como núcleo visual.
 
 ## Estructura
 
-| Ruta | Contenido |
-|---|---|
-| `index.html` | Entrada a la experiencia |
-| `os.html` | Capa de sistema operativo |
-| `skills-showcase.html` | Muestra de habilidades |
-| `core/` | Núcleo de la experiencia |
-| `assets/` · `vendor/` | Recursos y dependencias |
-| `docs/` | Documentación |
-| `pipelines/` | Flujos de producción |
-| `sources/` | Fuentes del material |
-
-## Documentación
-
-- `LORE_UNIFICADO-WEB-GALACTICO-2026-09-20.md` — la narrativa unificada
-- `lore_unificado.md` — versión de trabajo
-- `UNIFIED_WORKSPACE.md` — cómo se organiza el espacio
-
-## Identidad
-
-Negro `#000000`, rojo neón `#ff073a`, dorado Zion `#d4af37`, cyan `#4de8e0`.
-Orbitron para títulos, Share Tech Mono para el resto. 432 Hz.
-
-## Arranque
-
-```bash
-# abrir directamente
-start abrir.bat
+```
+judas-experience-unificado/
+├── index.html      # Experiencia unificada (motor 3D + Códice de lore)
+├── assets/
+│   ├── judas-key-art-planeta-diamante.png   # key art: planeta + llave dorada + diamante
+│   └── lore-portal-preview.png              # preview del portal de lore
+├── README.md
+└── LORE_UNIFICADO.md
 ```
 
-O servir la carpeta como estático.
+## Cómo abrirlo
 
----
+- **Doble clic** en `index.html` (o `Abrir.bat`). Necesita **conexión a internet** la primera vez:
+  el motor carga Three.js desde CDN (`cdn.jsdelivr.net`). El Códice y la maquetación funcionan igual.
+- Si el 3D no arranca, aparece un aviso; abre con un servidor local:
+  ```powershell
+  cd <carpeta>
+  python -m http.server 8080     # luego abre http://localhost:8080
+  ```
+- Controles: **clic** en planeta / llave / diamante / máquina para enfocar la cámara; rueda del
+  dock inferior para cambiar de objetivo; botón **LORE** (arriba o en el dock) abre el Códice.
 
-## Parte del universo Belentani
+## Qué cubre
 
-Este repositorio es una de las puertas del universo artístico de **Pedro Belentani**.
-El mapa completo, con todos los nodos y su papel, vive en el nodo central:
+- **Motor 3D**: planeta vivo (superficie procedural + pulso bioeléctrico), máquina orgánica
+  (anillos + iris + placas instanciadas), llave dorada PBR, diamante con transmisión/dispersión,
+  nebulosa procedural, campo de estrellas GPU, bloom y *color grading* con aberración + grano.
+- **Lore unificado**: 6 eras/nodos, las 4 gemas, los 5 Elementos, reliquias, Oráculo/Agente,
+  4 estados del sistema, registro del viaje y arca sonora.
+- **UI**: HUD de telemetría (GPU / BIO PULSE / FPS reales), panel lateral, dock, etiquetas 3D→HTML.
+- **Robustez**: *fallback* CSS si no hay WebGL, mensaje de error controlado, `prefers-reduced-motion`,
+  modo de calidad (AUTO / ECO / ULTRA), pantalla completa, audio opcional tras gesto.
 
-**<https://belentani.es>** — repo [`belentani_Omega`](https://github.com/belentani7/belentani_Omega)
+## Cómo editarlo
 
-| Nodo | Papel |
-|---|---|
-| [Belentani Omega](https://belentani.es) | Sitio oficial (nodo central) |
-| [The Judas Experience](https://github.com/belentani7/belentani-judas-experience) | La obra central |
-| [Omega Immersive Portal](https://belentani-omega-immersive-portal.vercel.app) | Portal inmersivo 3D |
-| [Galeria de Versiones](https://github.com/belentani7/belentani-omega-showcase) | Todas las versiones |
-| [ARCHIVO VIVO](https://github.com/belentani7/belentani-artista-unified) | Archivo de la obra |
-| [Belentani — Judas Era](https://github.com/belentani7/belentani-es-neon) | Portfolio visual |
-| [NOIACORE LAB](https://belentani.vercel.app) | Laboratorio |
+- **Textos del lore** → bloque `<section id="codex">` en `index.html`.
+- **Colores** → variables CSS en `:root` (`--red: #ff003c`, `--gold`, `--void-*`).
+- **Planeta / llave / diamante** → shaders y geometrías en el `<script type="module">`
+  (`planetMaterial`, `keyMesh`, `createBrilliantGeometry`).
+- **Objetos y focos de cámara** → `focusPresets` y los botones `data-focus`.
+- **Puntos de anclaje del lore** → `titles` dentro de `setFocus()`.
 
-## Licencia
+## Verificación
 
-MIT — ver `LICENSE`. © Belentani (obra y contenido).
+- Estructura comprobada: HTML bien formado (secciones y `<script>` balanceados), 95 KB.
+- La maquetación y el Códice funcionan sin red; el 3D requiere CDN de Three.js.
+- No verificado en navegador headless en este entorno: si el 3D no aparece, revisa conexión y
+  aceleración por hardware (o usa el servidor local indicado).

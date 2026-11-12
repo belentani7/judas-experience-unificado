@@ -71,3 +71,7 @@ judas-experience-unificado/
 - La maquetación y el Códice funcionan sin red; el 3D requiere CDN de Three.js.
 - No verificado en navegador headless en este entorno: si el 3D no aparece, revisa conexión y
   aceleración por hardware (o usa el servidor local indicado).
+
+
+## Producto
+Véase `plataforma/OFERTA.md`, `plataforma/precios.json`, `plataforma/ONEPAGER.md`.
